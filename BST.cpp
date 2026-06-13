@@ -17,7 +17,7 @@ int binarySearch(vector<int>& nums, int target){
         }
     
 
-    else if (target > nums[mid]){
+    else if (nums[mid] < target){
         start = mid+1;
     }
 
@@ -35,7 +35,7 @@ int binarySearch(vector<int>& nums, int target){
 
      int main(){
      vector<int> nums = {1,2,4,6,8,9,10};
-     int target = 8;
+     int target = 9;
 
      cout << binarySearch(nums, target);
      return 0;
